@@ -1,0 +1,89 @@
+
+History: 
+--------
+
+- ApplyDiffs
+- CheckCRC
+
+===============================================================================
+
+History - ApplyDiffs:
+---------------------
+
+2.5   22.11.01 released as ApplyDiffs 2.5
+               - increased buffers a bit to avoid problems in the near future
+
+2.4   20.11.01 released as ApplyDiffs 2.4
+               - feature  can now handle diffs without CRC-sum with the option -force 
+               - feature  modified InitCRC to make it endian independant
+
+2.3   22.03.97 released as ApplyDiffs 2.3
+               - feature  added support for gzip-compressed listfiles (UNIX)
+               - bugfix   can now handle mixed original- and stripped-diffs 
+                          correctly 
+
+2.2   04.10.96 released as ApplyDiffs 2.2
+               - bugfix   can handle long filenames correctly (AMIGA)
+
+2.1   04.04.96 released as ApplyDiffs 2.1
+               - bugfix   doesn't crash when adding a new list to the scheme
+               - change   updated copyright notices
+
+2.0   21.01.96 released as ApplyDiffs 2.0
+               - feature  added support for stripped diffs
+
+1.4   14.01.96 released as ApplyDiffs 1.4
+               - change   completely new io-routines (from the forthcoming
+                          new version of MovieMUI)
+               - change   UNIX-version has now same command-line-options
+               - change   replaced option NOCHECK by options FORCE and CHECKCRC
+               - change   cleaned up sourcecode (a bit)
+               - feature  new option LOGFILE
+
+1.3   13.12.95 internal release for listmanagers
+               - change   added support for non-Amiga-platforms
+
+1.2   01.10.95 released as Applydiffs 1.2
+               - bugfix:  set protection bits of list-files correctly
+               - bugfix:  fixed a bug in the code that ocurred when quite a lot
+                          of lines are added at the very beginning.
+               - bugfix:  fixed a bug in the file-buffering routines.
+               - feature: added ability to add new listfiles when they become
+                          part of the diff-scheme
+               - feature: check at first if list- and diff-files are 
+                          "compatible"
+               - feature: added option NOCHECK to prevent this check
+               - feature: delete successfully applied diff-files unless option
+                          KEEP is specified.
+               - change:  improved progress- and other status-output
+
+1.1   08.03.95 released as ApplyDiffs 1.1
+               - bugfix:  fixed a bug in the code that ocurred when quite a lot
+                          of lines are  added or removed at the same time.
+               - feature: a summary of all additions/deletions (stats) is 
+                          issued at the end.
+               - feature: added CLI-option QUIET to prevent output of progress.
+               - feature: added CLI-option NOSTATS to prevent output of stats.
+
+1.0   26.01.95 released as ApplyDiffs 1.0
+               - bugfix:  the program will now add missing '/' automatically
+               - feature: improved errorhandling
+               - feature: added option "KEEP"
+
+0.9   23.01.95 initial release (public beta)
+
+
+===============================================================================
+
+History - CheckCRC:
+-------------------
+
+1.5   22.11.01 bugfix: increased size of some buffers
+
+1.4   20.11.01 modified InitCRC to make it endian independant
+
+1.3   12.01.97 small changes 
+
+1.2   04.10.96 completely new version derived from ApplyDiffs
+
+1.1   15.12.94 initial release
